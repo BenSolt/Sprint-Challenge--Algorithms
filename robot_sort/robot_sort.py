@@ -113,7 +113,7 @@ class SortingRobot:
 
 
                 #compares held item to item in front of it.
-                # is holding item == to holding item?
+                # is holding item == to holding item
                 if self.compare_item() == 1:
                     #swap items EXAMPLE:  
                     self.swap_item() 
@@ -136,7 +136,7 @@ class SortingRobot:
                 
             if self.light_is_on(): 
                 while self.can_move_left():
-                    #move left 1 space
+                    #move left 1 space 
                     self.move_left() 
    
 
