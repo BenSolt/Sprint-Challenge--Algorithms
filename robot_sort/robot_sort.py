@@ -100,12 +100,25 @@ class SortingRobot:
         
 
 #1. Start - turn robot light on
-    # Now able to move left or right.
-    # It can pick up an item
+# Now able to move left or right.
+# It can pick up an item
 # If it tries  to pick up an item while already holding one, it will swap the items instead.
 # It can compare the item it's holding to the item in front of it.
 # It can switch a light on its head on or off.
 # robot to sort lists using ONLY these abilities.
+
+#Turn light on.
+self.set_light_on()
+# while on, (true) able to move
+while self.light_is_on():
+    # while off (false) not able to move
+    self.set_light_off()
+    # while able to move right 
+    while self.can_move_right():
+
+
+
+
 
 
 
