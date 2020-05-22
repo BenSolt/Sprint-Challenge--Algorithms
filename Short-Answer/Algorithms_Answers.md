@@ -2,14 +2,27 @@
 
 ## Exercise I
 
-a)
+a) Linear O(n)
+n is increasing at constant rate.
 
 
-b)
+b) Logarithmic O(log n)
+runtime will grow at a slightly slower rate.
 
 
-c)
+
+c)  Linear O(n)
+if have 3 bunnyEars counts down by 1 each run through. which is constant
 
 ## Exercise II
 
 
+
+def egg(n):
+  f = 7
+  while f < n:
+    print(f)
+    f += 1
+
+ Time is 0(n) 
+Space is 0(1)   
