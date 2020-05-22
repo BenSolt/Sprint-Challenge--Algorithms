@@ -2,15 +2,17 @@
 
 ## Exercise I
 
-a) Logarithmic O(log n)
-input incrases, runtime grows at slightly slower rate.
+a) Linear O(n)
+n is increasing at constant rate.
 
 
-b) Polynomial O(n**c)
-A for loop or in this case, a while loop, nested withen a for loop.
+b) Logarithmic O(n log n)
+runtime will grow at a slightly slower rate.
 
 
-c) Exponential O(n)
+
+c)  Linear O(n)
+if have 3 bunnyEars counts down by 1 each run through. which is constant
 
 ## Exercise II
 
