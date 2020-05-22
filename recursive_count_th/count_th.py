@@ -5,14 +5,28 @@ Your function must utilize recursion. It cannot contain any loops.
 '''
 def count_th(word):
     # TBC
-    # n = len(word)
-    if len(word) < 2:
-        return 0
-    # get length of array, counts number of th's that are in each word
-    elif len(word) == 'th':
-        #if true, adds 1
-        return 1 + count_th(word)
-    else:
-        return count_th(word)
     
-print(count_th('theee'))
+    # get length of array, counts number of th's that are in each word
+    if "th" in word:
+        #if true, adds 1
+        return 1, True
+    else:
+        #do nothing
+        return 0, False
+
+
+    # if "th" in word:
+    #     print('true') 
+    # else:
+    #     print('false')
+
+
+    if len(word) > 2:
+        return "a"
+    else:
+        return "b"
+   
+
+
+    
+print(count_th('theeth'))
