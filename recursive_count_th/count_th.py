@@ -12,31 +12,29 @@ def count_th(word):
     # 4. Return/print number of times th occured.
     
     # -- need to loop..somehow the number of times "th" occures in said
-    # word and add 1 each time.. Not sure..
+    # word and add 1 each time.. Not sure.
 
-# testing how to get work.
-
-    # res = word.split()
-    # print(res)
-    # print(word.res.count("th"))
-    # return word.lower().split().count("th")
-
-
-
+    if len(word) == 0:
+        return 0
     if "th" in word:
         #if true, adds 1s
         return(word.count("th"))
     else:
         #do nothing
-        return 0
+        return count_th(word[len("th") -1:])
+        
 
+# def factorial(x):
+
+#     if x == 1:
+#         return 1
+#     else:
+#         return (x * factorial(x-1))
 
     # if len(word) > 2:
     #     return "a"
     # else:
     #     return "b"
    
+print(count_th('tee'))
 
-
-    
-print(count_th('theeth'))
