@@ -19,7 +19,7 @@ if have 3 bunnyEars counts down by 1 each run through. which is constant
 
 
 def egg(n):
-  f = 7s
+  f = 7
   while f < n:
     print(f)
     f += 1

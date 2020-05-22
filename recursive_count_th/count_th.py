@@ -14,11 +14,14 @@ def count_th(word):
     # -- need to loop..somehow the number of times "th" occures in said
     # word and add 1 each time.. Not sure.
 
+    # lenght of word = 0
     if len(word) == 0:
         return 0
-    if "th" in word:
-        #if true, adds 1s
-        return(word.count("th"))
+    # if "th" in word:
+    # example: word "the" contains th
+    if (word[:len("th")] == "th"):
+        # lenght of word contains "th" + 1
+        return count_th(word[len("th"):]) + 1
     else:
         #do nothing
         return count_th(word[len("th") -1:])
@@ -37,4 +40,7 @@ def count_th(word):
     #     return "b"
    
 print(count_th('tee'))
+
+
+    
 
