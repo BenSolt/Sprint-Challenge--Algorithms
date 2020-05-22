@@ -6,25 +6,35 @@ Your function must utilize recursion. It cannot contain any loops.
 def count_th(word):
     # TBC
     
-    # get length of array, counts number of th's that are in each word
+    # 1. get length of list (array) of word
+    # 2. count number of "th" that are in each word
+    # 3. add 1 for each set of "th" that occures in said word.
+    # 4. Return/print number of times th occured.
+    
+    # -- need to loop..somehow the number of times "th" occures in said
+    # word and add 1 each time.. Not sure..
+
+# testing how to get work.
+
+    # res = word.split()
+    # print(res)
+    # print(word.res.count("th"))
+    # return word.lower().split().count("th")
+
+
+
     if "th" in word:
-        #if true, adds 1
-        return 1, True
+        #if true, adds 1s
+        return(word.count("th"))
     else:
         #do nothing
-        return 0, False
+        return 0
 
 
-    # if "th" in word:
-    #     print('true') 
+    # if len(word) > 2:
+    #     return "a"
     # else:
-    #     print('false')
-
-
-    if len(word) > 2:
-        return "a"
-    else:
-        return "b"
+    #     return "b"
    
 
 

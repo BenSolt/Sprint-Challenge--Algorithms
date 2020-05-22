@@ -97,7 +97,16 @@ class SortingRobot:
         Sort the robot's list.
         """
         # Fill this out
-        pass
+        
+
+#1. Start - turn robot light on
+    # Now able to move left or right.
+    # It can pick up an item
+# If it tries  to pick up an item while already holding one, it will swap the items instead.
+# It can compare the item it's holding to the item in front of it.
+# It can switch a light on its head on or off.
+# robot to sort lists using ONLY these abilities.
+
 
 
 if __name__ == "__main__":
