@@ -98,36 +98,47 @@ class SortingRobot:
         """
         # Fill this out
         
-
-#1. Start - turn robot light on
-# Now able to move left or right.
-# It can pick up an item
-# If it tries  to pick up an item while already holding one, it will swap the items instead.
-# It can compare the item it's holding to the item in front of it.
-# It can switch a light on its head on or off.
-# robot to sort lists using ONLY these abilities.
-
-#Turn light on.
-self.set_light_on()
-# while on, (true) able to move
-while self.light_is_on():
-    # while off (false) not able to move
-    self.set_light_off()
-    # while able to move right do following...
-    while self.can_move_right():
-        self.swap_item()
-        self.move_right()
-
-        #If the held item's value is greater, return 1.
-        #If the held item's value is less, return -1.
-        #If the held item's value is equal, return 0.
-        #If either item is None, return None.
-
-        if self.compare_item == 1:
-            
+        #TURN ON LIGHT
+        self.set_light_on()
+            # light on = True
+        while self.light_is_on(): 
+            # light off = False
+            self.set_light_off() 
+            # able to move right
+            while self.can_move_right():
+                
+                self.swap_item() #swap
+                
+                self.move_right() # plus one to right.
 
 
-
+                #compares held item to item in front of it.
+                # is holding item == to holding item?
+                if self.compare_item() == 1:
+                    #swap items EXAMPLE:  
+                    self.swap_item() 
+                    #move left 1 space   15, 41, 58, 49  At begin so cant move left.
+                    self.move_left() 
+                    #swap items          15, 41, 58, 49  (swap 15 and 41.) =>  41, 15, 58,49
+                    self.swap_item() 
+                    #move right 1 space  41, >15<, 58,49
+                    self.move_right() 
+                    #turn on light
+                    self.set_light_on()
+                # is not holding item
+                if self.compare_item() == -1:
+                    # move 1 to left    15, 41, 58, 49
+                    self.move_left()
+                    #swap items.        15, 41, 58, 49
+                    self.swap_item()
+                    #move 1 to right.   15, 41, 58, 49
+                    self.move_right()
+                
+            if self.light_is_on(): 
+                while self.can_move_left():
+                    #move left 1 space
+                    self.move_left() 
+   
 
 
 
